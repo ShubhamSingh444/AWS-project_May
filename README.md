@@ -30,8 +30,10 @@ Private Subnets Route Table: Includes routes to the NAT gateway and S3 gateway e
 
 **Security Groups**
 Configured to allow traffic from the load balancer over the listener port and protocol, and to allow health check traffic.
-Deployment Steps
-Create the VPC
+
+**Deployment Steps**
+
+**Create the VPC**
 Open the Amazon VPC console.
 Choose Create VPC and configure:
 Name tag
@@ -44,23 +46,29 @@ NAT gateways: 1 per AZ
 VPC endpoints: S3 Gateway (optional)
 DNS options: Enable DNS hostnames (optional)
 Click Create VPC.
-Deploy Your Application
+
+**Deploy Your Application**
+
 Create a Launch Template:
 Specify configuration information needed to launch EC2 instances using Amazon EC2 Auto Scaling.
 Create an Auto Scaling Group:
 Define the minimum, maximum, and desired number of instances.
 Create a Load Balancer:
 Distribute traffic evenly across instances and attach it to the Auto Scaling group.
-Testing and Validation
+
+**Testing and Validation**
+
 Ensure that the instances in the private subnets can connect to the internet via the NAT gateways.
 Verify that the load balancer distributes traffic evenly across the instances.
 Check security group rules to confirm that only necessary traffic is allowed.
-Clean Up
-Terminate resources and delete the VPC to avoid incurring costs when no longer needed.
-What We Learned
+
+**What We Learned**
+
 High Availability Architecture: Designing applications for high availability using multiple Availability Zones.
 Network Security: Implementing network security best practices with NAT gateways and security groups.
 Scalability: Utilizing auto-scaling for handling varying loads.
 AWS Services Integration: Effective integration of AWS services like VPC, EC2, Auto Scaling, Load Balancers, and S3.
-Conclusion
+
+**Conclusion**
+
 This project was a significant step in mastering cloud infrastructure design and deployment. The skills and knowledge gained will be valuable for future projects and further exploration of AWS capabilities.
