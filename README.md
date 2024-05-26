@@ -1,10 +1,13 @@
-AWS VPC Deployment Project
+**AWS VPC Deployment Project**
+
 **Overview**
+
 This project demonstrates how to create a highly resilient and secure Virtual Private Cloud (VPC) in AWS to support production-level applications. The setup includes multiple Availability Zones, public and private subnets, NAT gateways, an Application Load Balancer, and an Auto Scaling group.
 
-Architecture Diagram
+**Architecture Diagram**
 
 ![vpc-example-private-subnets](https://github.com/ShubhamSingh444/AWS-project_May/assets/97628683/9b3e06a5-3e3b-4fa7-80b9-5ed4d152e188)
+
 Picture taken from AWS
 
 **Project Components**
