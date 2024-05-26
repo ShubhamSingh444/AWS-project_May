@@ -27,6 +27,7 @@ Added an S3 Gateway Endpoint to enable secure and efficient access to Amazon S3 
 **Routing**
 Public Subnets Route Table: Includes routes to the internet gateway.
 Private Subnets Route Table: Includes routes to the NAT gateway and S3 gateway endpoint.
+
 **Security Groups**
 Configured to allow traffic from the load balancer over the listener port and protocol, and to allow health check traffic.
 Deployment Steps
