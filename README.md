@@ -1,10 +1,11 @@
 AWS VPC Deployment Project
-Overview
+**Overview**
 This project demonstrates how to create a highly resilient and secure Virtual Private Cloud (VPC) in AWS to support production-level applications. The setup includes multiple Availability Zones, public and private subnets, NAT gateways, an Application Load Balancer, and an Auto Scaling group.
 
 Architecture Diagram
+![vpc-example-private-subnets](https://github.com/ShubhamSingh444/AWS-project_May/assets/97628683/9b3e06a5-3e3b-4fa7-80b9-5ed4d152e188)
 
-Project Components
+**Project Components**
 1. VPC Setup
 Created a VPC spanning two Availability Zones for high availability and fault tolerance.
 2. Subnets Configuration
@@ -20,7 +21,8 @@ Configured an Auto Scaling group to dynamically adjust the number of EC2 instanc
 Set up Security Groups to control inbound and outbound traffic, allowing only necessary communication to and from the instances.
 7. Gateway VPC Endpoint
 Added an S3 Gateway Endpoint to enable secure and efficient access to Amazon S3 from the private subnets.
-Routing
+
+**Routing**
 Public Subnets Route Table: Includes routes to the internet gateway.
 Private Subnets Route Table: Includes routes to the NAT gateway and S3 gateway endpoint.
 Security Groups
